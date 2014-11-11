@@ -1,0 +1,43 @@
+[alias]
+    a   = add
+    b   = branch
+    ba  = branch -a
+    bd  = branch -d
+    c   = commit
+    ca  = commit --amend
+    can = commit --amend --no-edit
+    cm  = commit -m
+    co  = checkout
+    cob = checkout -b
+    d   = diff
+    dc  = diff --cached
+    f   = fetch
+    fa  = fetch --all
+    l   = log --pretty=format:'%C(blue)%h%Creset %s%C(yellow)%d%Creset %Cgreen(%cr) %C(blue bold)(%an)%Creset' --graph --abbrev-commit -n 15
+    m   = merge
+    mn  = merge --no-ff
+    p   = push
+    pf  = push -f
+    r   = rebase
+    ri  = rebase -i
+    s   = status
+    st  = stash
+
+[color]
+    ui = true
+
+[core]
+    excludesfile = ~/.gitignore_global
+    autocrlf = false
+    safecrlf = true
+    editor = vim
+
+[mergetool]
+    keepBackup = false
+
+[push]
+    default = upstream
+
+[user]
+    name = Shefaet Rahman
+    email = shefaet@gmail.com
