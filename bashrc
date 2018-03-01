@@ -57,3 +57,7 @@ function refresh-display {
     export DISPLAY=$(cat ~/.DISPLAY)
     echo "DISPLAY set to $DISPLAY"
 }
+
+alias sshdev="ssh -Y -tt v5dev inline"
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash

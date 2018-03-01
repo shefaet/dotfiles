@@ -15,3 +15,8 @@ for file in $files; do
     echo "Creating symlink    ~/.$file to ./$file"
     ln -s $(pwd)/$file $HOME/.${file}
 done
+
+if [ ! -d $HOME/.vim/bundle/Vundle.vim ]; then
+    git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+fi
+vim +PluginInstall +qall

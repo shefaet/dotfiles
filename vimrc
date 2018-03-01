@@ -7,6 +7,7 @@ filetype off
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
+set rtp+=/usr/local/opt/fzf
 call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
@@ -14,7 +15,6 @@ Plugin 'mileszs/ack.vim'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'Raimondi/delimitMate'
 Plugin 'shefaet/libnlp.vim'
-Plugin 'tomasr/molokai'
 Plugin 'scrooloose/nerdtree'
 Plugin 'ervandew/supertab'
 Plugin 'godlygeek/tabular'
@@ -26,8 +26,9 @@ Plugin 'octol/vim-cpp-enhanced-highlight'
 Plugin 'tpope/vim-fugitive'
 Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'christoomey/vim-tmux-navigator'
-Plugin 'benmills/vimux'
 Plugin 'chriskempson/vim-tomorrow-theme'
+Plugin 'junegunn/fzf.vim'
+Plugin 'SWIG-syntax'
 
 call vundle#end()
 
